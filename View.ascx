@@ -2,7 +2,7 @@
 <asp:Label ID="lblModuleInfo" runat="server"></asp:Label>
 
 <div id="NoAppInfo" runat="server">
-    <asp:Label ID="lblNoAppInfo" runat="server" />
+    <asp:Label ID="lblNoAppInfo" resourcekey="lblNoAppInfo" runat="server" />
 </div>
 
 <div id="AppInfo" runat="Server">
@@ -79,15 +79,23 @@
             }, { scope: 'manage_pages' });
         }
     </script>
-
-    <fb:login-button length="long" autologoutlink="false" onlogin="myFacebookLogin();"></fb:login-button>
+    <asp:Label ID="lblStep1" resourcekey="lblStep1" runat="server" />
 
     <p>
-        <asp:HiddenField ID="hfAuthToken" runat="server" ClientIDMode="Static" />
-        Then Click
-    <asp:LinkButton ID="lbAuth" runat="server" Text="Step 2" OnClick="lbAuth_Click" />
-    </p>
+        <fb:login-button length="long" autologoutlink="false" onlogin="myFacebookLogin();"></fb:login-button>
 
+        <asp:HiddenField ID="hfAuthToken" runat="server" ClientIDMode="Static" />
+    </p>
     <ul id="list"></ul>
+    <p>
+        <asp:Label ID="lblStep2" resourcekey="lblStep2" runat="server" />
+    </p>
+    <asp:LinkButton ID="lbAuth" runat="server" Text="Click to Update" OnClick="lbAuth_Click" CssClass="btn primary" />
+
+</div>
+
+<div id="AlreadySetup" runat="server" >
+
+    <asp:Label ID="lblAlreadySetup" runat="server" resourcekey="lblAlreadySetup" />
 
 </div>

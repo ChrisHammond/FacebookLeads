@@ -49,6 +49,15 @@ namespace Christoc.Modules.FacebookLeads {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl AppInfo;
         
         /// <summary>
+        /// lblStep1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblStep1;
+        
+        /// <summary>
         /// hfAuthToken control.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace Christoc.Modules.FacebookLeads {
         protected global::System.Web.UI.WebControls.HiddenField hfAuthToken;
         
         /// <summary>
+        /// lblStep2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblStep2;
+        
+        /// <summary>
         /// lbAuth control.
         /// </summary>
         /// <remarks>
@@ -65,5 +83,23 @@ namespace Christoc.Modules.FacebookLeads {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbAuth;
+        
+        /// <summary>
+        /// AlreadySetup control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl AlreadySetup;
+        
+        /// <summary>
+        /// lblAlreadySetup control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAlreadySetup;
     }
 }

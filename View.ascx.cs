@@ -39,19 +39,22 @@ namespace Christoc.Modules.FacebookLeads
                 //https://developers.facebook.com/docs/marketing-api/guides/lead-ads/quickstart/webhooks-integration
                 if (!Page.IsPostBack)
                 {
+                    AlreadySetup.Visible = false;
                     if (Settings.Contains("AppId"))
                     {
                         AppInfo.Visible = true; NoAppInfo.Visible = false;
                         if (Settings.Contains("accessToken"))
                         {
-
+                            AppInfo.Visible = false;
+                            AlreadySetup.Visible = true;
                             var accessToken = Settings["accessToken"].ToString();
                             hfAuthToken.Value = accessToken;
 
                         }
-                        //TODO: check if the access token is setup in the Module Settings, if not, let's go through Facebook connection
+                        
                         else
                         {
+                            AlreadySetup.Visible = false;
                         }
                     }
                     //AppId not configured yet, we need to display a message

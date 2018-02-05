@@ -135,6 +135,9 @@
   <data name="EditModule.Text" xml:space="preserve">
     <value>Add Item</value>
   </data>
+  <data name="lblAlreadySetup.Text" xml:space="preserve">
+    <value>You've already configured the module, there's nothing else to do. If you want to start over, navigate to the Module Settings and delete the settings.</value>
+  </data>
   <data name="lblModuleInfo.Text" xml:space="preserve">
     <value>&lt;p&gt;This module is used to provide this site/service as a Facebook Map to accept Facebook Leads via a Webhook. From this page you will do the following:&lt;/p&gt;
 &lt;ol&gt;
@@ -146,5 +149,11 @@
   </data>
   <data name="lblNoAppInfo.Text" xml:space="preserve">
     <value>Please access the Module Settings and configure your App Id. You do not need to provide the "Access" token in the module settings, later steps on this page will do that for you.</value>
+  </data>
+  <data name="lblStep1.Text" xml:space="preserve">
+    <value>Step 1: Login to Facebook, then choose a Page you manage and give the App permission to that page.</value>
+  </data>
+  <data name="lblStep2.Text" xml:space="preserve">
+    <value>Click below to save the access token provided by Step #1.</value>
   </data>
 </root>
