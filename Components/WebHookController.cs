@@ -72,10 +72,11 @@ namespace Christoc.Modules.FacebookLeads.Components
 
                         if (change == null) return new HttpResponseMessage(HttpStatusCode.BadRequest);
 
-                        
+
                         //Get the token from the module settings.
                         //TODO: check if these tokens are 24 hour or not.
-                        
+                        //TODO: these tokens are currently 1 or 2 hours, look at using long lived tokens https://developers.facebook.com/docs/facebook-login/access-tokens/expiration-and-extension 
+
                         var mc = new ModuleController();                        
                         var mi = mc.GetModuleByDefinition(0, "FacebookLeads");                        
                         string token = mi.ModuleSettings["accessToken"].ToString();
@@ -129,7 +130,7 @@ namespace Christoc.Modules.FacebookLeads.Components
                                 catch (Exception ex)
                                 {
                                     var objEventLog2 = new EventLogController();
-                                    objEventLog2.AddLog("Lead Creation Failed", "Lead Creation Failed from Facebook + Ex=" + ex.StackTrace.ToString()
+                                    objEventLog2.AddLog("Lead Creation Failed", "Lead Creation Failed from Facebook + Ex=" + ex.StackTrace.ToString() + "Lead URL" + leadUrl
                                                 , PortalSettings, -1, EventLogController.EventLogType.ADMIN_ALERT);
                                 }
                             }

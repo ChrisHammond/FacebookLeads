@@ -30,7 +30,7 @@ namespace Christoc.Modules.FacebookLeads
     /// 
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class View : FacebookLeadsModuleBase, IActionable
+    public partial class View : FacebookLeadsModuleBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -71,21 +71,7 @@ namespace Christoc.Modules.FacebookLeads
             }
         }
 
-        public ModuleActionCollection ModuleActions
-        {
-            get
-            {
-                var actions = new ModuleActionCollection
-                    {
-                        {
-                            GetNextActionID(), Localization.GetString("EditModule", LocalResourceFile), "", "", "",
-                            EditUrl(), false, SecurityAccessLevel.Edit, true, false
-                        }
-                    };
-                return actions;
-            }
-        }
-
+        
         protected void lbAuth_Click(object sender, EventArgs e)
         {
             var accessToken = hfAuthToken.Value;
