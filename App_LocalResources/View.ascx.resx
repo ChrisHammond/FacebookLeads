@@ -151,7 +151,7 @@
     <value>Please access the Module Settings and configure your App Id. You do not need to provide the "Access" token in the module settings, later steps on this page will do that for you.</value>
   </data>
   <data name="lblStep1.Text" xml:space="preserve">
-    <value>Step 1: Login to Facebook, then choose a Page you manage and give the App permission to that page.</value>
+    <value>Step 1: Login to Facebook, then choose a Page you manage and give the App permission to that page. This does require the MANAGE PAGE permission in Facebook.</value>
   </data>
   <data name="lblStep2.Text" xml:space="preserve">
     <value>Click below to save the access token provided by Step #1.</value>
