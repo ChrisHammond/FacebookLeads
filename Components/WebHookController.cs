@@ -21,10 +21,8 @@ using System.Web;
 using DotNetNuke.Web.Api;
 using Christoc.Modules.FacebookLeads.Model;
 using Newtonsoft.Json;
-using DotNetNuke.Instrumentation;
 using DotNetNuke.Entities.Modules;
 using System.Web.Http;
-using DotNetNuke.Services.Exceptions;
 using DotNetNuke.Services.Log.EventLog;
 using DotNetNuke.Entities.Users;
 using DotNetNuke.Security.Membership;
@@ -33,7 +31,7 @@ using DotNetNuke.Security.Roles;
 namespace Christoc.Modules.FacebookLeads.Components
 {
 
-    //http://dnndev.me/desktopmodules/FacebookLeads/API/Webhooks/Post?hub.challenge=test
+    //http://dnnsummit2018.me/desktopmodules/FacebookLeads/API/Webhooks/Post?hub.challenge=test
 
     public class WebhooksController : DnnApiController
     {

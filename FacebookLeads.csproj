@@ -92,8 +92,7 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\FeatureController.cs" />
-    <Compile Include="Components\LeadCollectorRouteMapper.cs" />
+    <Compile Include="Components\FacebookLeadsRouteMapper.cs" />
     <Compile Include="Components\WebHookController.cs" />
     <Compile Include="FacebookLeadsModuleBase.cs">
       <SubType>ASPXCodeBehind</SubType>

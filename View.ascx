@@ -39,9 +39,9 @@
         }(document, 'script', 'facebook-jssdk'));
 
         function subscribeApp(page_id, page_access_token) {
-            alert(page_access_token);
+            
             $("#hfAuthToken").val(page_access_token);
-            alert(hfAuthToken.value);
+            //alert(hfAuthToken.value);
 
             console.log('Subscribing page to app! ' + page_id);
             FB.api(
