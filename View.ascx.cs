@@ -32,6 +32,7 @@ namespace Christoc.Modules.FacebookLeads
     /// -----------------------------------------------------------------------------
     public partial class View : FacebookLeadsModuleBase
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             try
@@ -51,7 +52,7 @@ namespace Christoc.Modules.FacebookLeads
                             hfAuthToken.Value = accessToken;
 
                         }
-                        
+
                         else
                         {
                             AlreadySetup.Visible = false;
@@ -71,7 +72,7 @@ namespace Christoc.Modules.FacebookLeads
             }
         }
 
-        
+
         protected void lbAuth_Click(object sender, EventArgs e)
         {
             var accessToken = hfAuthToken.Value;
@@ -79,6 +80,8 @@ namespace Christoc.Modules.FacebookLeads
             mc.UpdateModuleSetting(ModuleId, "accessToken", accessToken);
         }
 
-
+       
     }
+
+ 
 }

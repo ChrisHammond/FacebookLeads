@@ -31,7 +31,7 @@
           <desktopModule>
             <moduleName>FacebookLeads</moduleName>
             <foldername>FacebookLeads</foldername>
-            <businessControllerClass>Christoc.Modules.FacebookLeads.Components.FeatureController, FacebookLeads</businessControllerClass>
+            <businessControllerClass></businessControllerClass>
             <supportedFeatures>
               <supportedFeature>IPortable</supportedFeature>
               <supportedFeature>ISearchable</supportedFeature>
