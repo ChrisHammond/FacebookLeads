@@ -11,15 +11,8 @@
 */
 
 using System;
-using System.Web.UI.WebControls;
-using Christoc.Modules.FacebookLeads.Components;
-using DotNetNuke.Security;
 using DotNetNuke.Services.Exceptions;
 using DotNetNuke.Entities.Modules;
-using DotNetNuke.Entities.Modules.Actions;
-using DotNetNuke.Services.Localization;
-using DotNetNuke.UI.Utilities;
-using Facebook;
 
 namespace Christoc.Modules.FacebookLeads
 {
